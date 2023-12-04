@@ -44,8 +44,16 @@ a {
 }
 
 /* ========= Header ======= */
-
-.header {
+.fixed-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #e6f0ff;
     height: 100vh;
@@ -54,7 +62,8 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -141,7 +150,7 @@ a {
     color: #7d8589;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;
 }
 .clients .row-desc {
     margin-top: 23px;
@@ -161,6 +170,7 @@ a {
     opacity: 0.9;
     border-radius: 12px;
 }
+
 /* ========= Guides ======= */
 .guides {
     margin-top: 40px;
